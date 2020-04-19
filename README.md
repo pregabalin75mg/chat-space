@@ -21,6 +21,11 @@
 - has_many :post
 - has_many :group_users
 
+## Postテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
+|email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
 
 
 ## groups_usersテーブル
