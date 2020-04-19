@@ -5,6 +5,10 @@
 |name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
 |email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
 
+### Association
+- has_many :group
+- has_many :post
+
 
 
 
