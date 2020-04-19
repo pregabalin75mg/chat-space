@@ -8,6 +8,7 @@
 ### Association
 - has_many :group
 - has_many :post
+- has_many :groups_users
 
 
 
