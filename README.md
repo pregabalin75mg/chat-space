@@ -5,7 +5,7 @@
 |name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
 |email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
 
-### Association
+### Association(users)
 - has_many :group
 - has_many :post
 - has_many :groups_users
@@ -16,17 +16,20 @@
 |group_name|string|null: false, foreign_key: true, add_index :groups, :group_name, unique: true|
 |memmber|string|null: false, foreign_key: true|
 
-### Association
+### Association(groups)
 - has_many :users
 - has_many :post
 - has_many :group_users
 
-## Postテーブル
+## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
 |email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
 
+### Association(post)
+- belongs_to :users
+- belongs_to :groups
 
 ## groups_usersテーブル
 
