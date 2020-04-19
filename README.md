@@ -5,7 +5,7 @@
 |name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
 |email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
 
-### Association(users)
+### Association
 - has_many :group
 - has_many :post
 - has_many :groups_users
@@ -16,7 +16,7 @@
 |group_name|string|null: false, foreign_key: true, add_index :groups, :group_name, unique: true|
 |memmber|string|null: false, foreign_key: true|
 
-### Association(groups)
+### Association
 - has_many :users
 - has_many :post
 - has_many :group_users
@@ -27,7 +27,7 @@
 |post|text|null: false|
 |image|text|null: false|
 
-### Association(post)
+### Association
 - belongs_to :users
 - belongs_to :groups
 
