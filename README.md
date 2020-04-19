@@ -10,6 +10,16 @@
 - has_many :post
 - has_many :groups_users
 
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|group_name|string|null: false, foreign_key: true, add_index :groups, :group_name, unique: true|
+|memmber|string|null: false, foreign_key: true|
+
+### Association
+- has_many :users
+- has_many :post
+- has_many :group_users
 
 
 
