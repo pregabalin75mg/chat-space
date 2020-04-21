@@ -8,7 +8,7 @@
 
 
 ### Association
-- has_many :group, through: :users_groups
+- has_many :groups, through: :users_groups
 - has_many :posts
 - has_many :users_groups
 
