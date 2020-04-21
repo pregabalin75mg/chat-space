@@ -27,6 +27,7 @@
 |------|----|-------|
 |post|text|-|
 |image|text|-|
+|user_id|integer|null: false|
 
 ### Association
 - belongs_to :user
