@@ -25,8 +25,8 @@
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|post|text|null: false|
-|image|text|null: false|
+|post|text|-|
+|image|text|-|
 
 ### Association
 - belongs_to :user
