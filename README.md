@@ -20,7 +20,7 @@
 
 ### Association
 - has_many :users, through: :users_groups
-- has_many :posts
+- has_many :postss
 - has_many :users_groups
 
 ## postsテーブル
@@ -30,8 +30,8 @@
 |image|text|null: false|
 
 ### Association
-- belongs_to :users
-- belongs_to :groups
+- belongs_to :user
+- belongs_to :group
 
 ## users_groupsテーブル
 
