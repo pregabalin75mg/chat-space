@@ -8,7 +8,7 @@
 
 
 ### Association
-- has_many :group
+- has_many :group, through: :users_groups
 - has_many :post
 - has_many :users_groups
 
@@ -19,7 +19,7 @@
 |memmber|string|null: false, foreign_key: true|
 
 ### Association
-- has_many :users
+- has_many :users, through: :users_groups
 - has_many :post
 - has_many :users_groups
 
