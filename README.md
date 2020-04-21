@@ -16,7 +16,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, add_index :groups, :name, unique: true|
-|memmber|string|null: false, foreign_key: true|
 
 ### Association
 - has_many :users, through: :users_groups
