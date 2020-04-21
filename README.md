@@ -15,7 +15,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, add_index :groups, :group_name, unique: true|
+|name|string|null: false, add_index :groups, :name, unique: true|
 |memmber|string|null: false, foreign_key: true|
 
 ### Association
