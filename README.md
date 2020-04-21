@@ -3,7 +3,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, foreign_key: true, add_index :users, :name, unique: true|
-|email|string|null: false, foreign_key: true, add_index :users, :email, unique: true|
+|email|string|null: false, add_index :users, :email, unique: true|
 |password|string|null: false|
 
 
