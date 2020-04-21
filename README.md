@@ -10,6 +10,7 @@
 ### Association
 - has_many :group
 - has_many :post
+- has_many :users_groups
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -20,6 +21,7 @@
 ### Association
 - has_many :users
 - has_many :post
+- has_many :users_groups
 
 ## postsテーブル
 |Column|Type|Options|
