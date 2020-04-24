@@ -23,7 +23,10 @@
         background-color: red;
         width: 200px;
       }
- 
+      &__edit {
+        background-color: blue;
+        width: 60px;
+      }
     }
   }
   .side-group {
