@@ -29,4 +29,17 @@
   background-color: #ffffff;
   height: 100vh;
   width: calc(100vw - 300px);
+  &__bar {
+    height: 100px;
+    background-color: yellowgreen;
+  }
+  &__message {
+    height: calc(100vh - 190px);
+    background-color: skyblue;
+  }
+  &__form {
+    height: 90px;
+    background-color: green;
+  }
+  
 }
