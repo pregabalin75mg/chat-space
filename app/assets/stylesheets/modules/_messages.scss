@@ -19,6 +19,11 @@
       height: 20px;
       width: 260px;
       margin: 0 auto;
+      &__name {
+        background-color: red;
+        width: 200px;
+      }
+ 
     }
   }
   .side-group {
