@@ -25,6 +25,8 @@
       &__edit {
         background-color: blue;
         width: 60px;
+        display: flex;
+        justify-content: flex-end;
         i {
           color: #ffffff;
           font-size: 20px;
