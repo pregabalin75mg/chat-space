@@ -9,7 +9,6 @@
   .side-bar {
     height: 100px;
     background-color: #253141;
-    font-size: 50px;
     color: blue;
     display: flex;
     align-items: center;
@@ -26,6 +25,10 @@
       &__edit {
         background-color: blue;
         width: 60px;
+        i {
+          color: #ffffff;
+          font-size: 20px;
+        }
       }
     }
   }
