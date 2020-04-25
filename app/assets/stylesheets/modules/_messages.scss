@@ -15,16 +15,13 @@
     align-items: center;
     &__NameBox {
       display: flex;
-      background-color: #d8d8d8;
       height: 20px;
       width: 260px;
       margin: 0 auto;
       &__name {
-        background-color: red;
         width: 200px;
       }
       &__edit {
-        background-color: blue;
         width: 60px;
         display: flex;
         justify-content: flex-end;
