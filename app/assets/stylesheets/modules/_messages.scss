@@ -40,7 +40,11 @@
     height: calc(100vh - 100px);
     color: #ffffff;
     font-weight: bold;
-
+      &__GroupName {
+        font-size: 15px;
+        margin-left: 20px;
+        padding-top: 20px;
+      }
   }
 }
 
