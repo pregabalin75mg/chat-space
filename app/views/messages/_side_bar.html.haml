@@ -2,10 +2,13 @@
   .side-bar
     .side-bar__NameBox
       .side-bar__NameBox__name
-      .side-bar__NameBox__edit
-        = link_to root_path do
-          = icon('far', 'edit')
-        = link_to root_path do
-          = icon('fas', 'cog')
+        TestName
+      %ul.side-bar__NameBox__edit
+        %li.side-bar__NameBox__edit-user
+          = link_to root_path do
+            = icon('far', 'edit')
+        %li.side-bar__NameBox__edit-gear
+          = link_to root_path do
+            = icon('fas', 'cog')
         
   .side-group
