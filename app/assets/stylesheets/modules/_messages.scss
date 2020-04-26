@@ -113,7 +113,11 @@
     height: 90px;
     background-color: green;
     &__input-box {
-      
+      input {
+        width: calc(100vw - 300px - 195px);
+        height: 50px;
+        padding-left: 10px;
+      }
     }
   }
 }
