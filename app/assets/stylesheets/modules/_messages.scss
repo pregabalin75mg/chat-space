@@ -109,7 +109,11 @@
     }
   }
   &__form {
+    display: flex;
     height: 90px;
     background-color: green;
+    &__input-box {
+      
+    }
   }
 }
