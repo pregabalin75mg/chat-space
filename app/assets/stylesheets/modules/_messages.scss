@@ -91,6 +91,12 @@
     background-color: skyblue;
     &__user {
       display: flex;
+      padding-top: 35px;
+      margin-left: 40px;
+      &__UserName {
+        font-size: 16px;
+        color: #333333;
+      }
     }
   }
   &__form {
