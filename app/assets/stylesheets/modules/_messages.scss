@@ -63,6 +63,9 @@
   &__header {
     height: 100px;
     background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+
   }
   &__message {
     height: calc(100vh - 190px);
