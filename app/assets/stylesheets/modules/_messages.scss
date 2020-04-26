@@ -89,6 +89,9 @@
   &__message {
     height: calc(100vh - 190px);
     background-color: skyblue;
+    &__user {
+      display: flex;
+    }
   }
   &__form {
     height: 90px;
