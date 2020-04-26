@@ -115,10 +115,20 @@
     height: 90px;
     background-color: green;
     &__input-box {
+      position: relative;
       input {
         width: calc(100vw - 300px - 195px);
         height: 50px;
         padding: 0 10px;
+      }
+      label {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+      }
+      &__image__file {
+        display: none;
       }
     }
     &__submit-btn {
