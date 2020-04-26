@@ -62,7 +62,6 @@
   width: calc(100vw - 300px);
   &__header {
     height: 100px;
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
     &__GroupName {
@@ -88,8 +87,8 @@
   }
   &__message {
     height: calc(100vh - 190px);
-    background-color: skyblue;
     padding-left: 40px;
+    background-color: #fafafa;
     &__user {
       display: flex;
       padding-top: 35px;
@@ -113,7 +112,7 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-    background-color: green;
+    background-color: #ddd;
     &__input-box {
       position: relative;
       input {
