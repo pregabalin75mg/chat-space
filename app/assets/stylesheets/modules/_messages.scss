@@ -102,7 +102,11 @@
         color: #999999;
       }
     }
-    &__
+    &__UserMessage {
+      font-size: 14px;
+      color: #434A54;
+      margin: 12px 0 46px;
+    }
   }
   &__form {
     height: 90px;
