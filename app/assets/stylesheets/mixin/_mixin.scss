@@ -2,3 +2,6 @@
   width: $width;
   height: $height;
 }
+@mixin color() {
+  color: #ffffff;
+}
