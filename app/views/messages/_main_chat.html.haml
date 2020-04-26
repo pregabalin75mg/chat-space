@@ -17,5 +17,8 @@
   .chat-main__form
     .chat-main__form__input-box
       %input{type: "text", placeholder: "type a message"}
+      %label{class: "chat-main__form__input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "chat-main__form__input-box__image__file"}
     .chat-main__form__submit-btn 
       %input{type: "submit", value: "Send"}
