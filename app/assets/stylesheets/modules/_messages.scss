@@ -70,6 +70,10 @@
       color: #333333;
       margin-left: 40px;
       margin-top: 35px;
+      &__MemberName {
+
+      }
+    }
   }
   &__message {
     height: calc(100vh - 190px);
@@ -78,8 +82,5 @@
   &__form {
     height: 90px;
     background-color: green;
-  }
-  
-
   }
 }
