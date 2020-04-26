@@ -18,7 +18,7 @@
 
     &__NameBox {
       display: flex;
-      @include width-height(260px,20px);
+      @include width-height(260px,$common_px);
       margin: 0 auto;
 
       &__name {
@@ -34,7 +34,7 @@
         i {
           margin-left: 5px;
           @include color();
-          font-size: 20px;
+          font-size: $common_px;
         }
       }
     }
@@ -48,13 +48,13 @@
 
       &__GroupName {
         font-size: 15px;
-        margin-left: 20px;
-        padding-top: 20px;
+        margin-left: $common_px;
+        padding-top: $common_px;
       }
 
       &__GroupMessage {
         font-size: 11px;
-        margin: 5px 20px 40px;
+        margin: 5px $common_px 40px;
       }
   }
 }
@@ -71,7 +71,7 @@
     justify-content: space-between;
 
     &__GroupName {
-      font-size: 20px;
+      font-size: $common_px;
       color: #333333;
       margin-left: 40px;
       margin-top: 35px;
@@ -88,7 +88,7 @@
       font-size: 16px;
       @include width-height(72px, 40px);
       text-decoration: none;
-      margin: 28px 20px;
+      margin: 28px $common_px;
       padding: 12px 28px;
     }
   }
