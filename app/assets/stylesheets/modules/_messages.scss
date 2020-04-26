@@ -10,7 +10,7 @@
   .side-bar {
     height: 100px;
     background-color: #253141;
-    @include color();
+    color: $common_color;
     font-size: $font_px;
     font-weight: bold;
     display: $flex;
@@ -33,7 +33,7 @@
 
         i {
           margin-left: 5px;
-          @include color();
+          color: $common_color;
           font-size: $common_px;
         }
       }
@@ -43,7 +43,7 @@
   .side-group {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    @include color();
+    color: $common_color;
     font-weight: bold;
 
       &__GroupName {
@@ -62,7 +62,7 @@
 .chat-main {
   float: left;
   display: block;
-  @include color();
+  color: $common_color;
   @include width-height(calc(100vw - 300px), 100vh);
 
   &__header {
