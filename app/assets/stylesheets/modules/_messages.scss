@@ -13,11 +13,11 @@
     @include color();
     font-size: 16px;
     font-weight: bold;
-    display: flex;
+    display: $flex;
     align-items: center;
 
     &__NameBox {
-      display: flex;
+      display: $flex;
       @include width-height(260px,$common_px);
       margin: 0 auto;
 
@@ -27,7 +27,7 @@
 
       &__edit {
         width: 60px;
-        display: flex;
+        display: $flex;
         justify-content: flex-end;
         text-decoration: none;
 
@@ -67,7 +67,7 @@
 
   &__header {
     height: 100px;
-    display: flex;
+    display: $flex;
     justify-content: space-between;
 
     &__GroupName {
@@ -99,7 +99,7 @@
     background-color: #fafafa;
 
     &__user {
-      display: flex;
+      display: $flex;
       padding-top: 35px;
 
       &__UserName {
@@ -121,7 +121,7 @@
   }
 
   &__form {
-    display: flex;
+    display: $flex;
     justify-content: center;
     align-items: center;
     height: 90px;
