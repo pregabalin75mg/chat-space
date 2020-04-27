@@ -8,8 +8,8 @@
   width: 300px;
 
   .side-bar {
-    height: 100px;
-    background-color: #253141;
+    height: $usual_px;
+    background-color: $side_bar_color;
     color: $common_color;
     font-size: $font_px;
     font-weight: bold;
@@ -41,7 +41,7 @@
   }
 
   .side-group {
-    background-color: #2f3e51;
+    background-color: $side_group_color;
     height: calc(100vh - 100px);
     color: $common_color;
     font-weight: bold;
@@ -66,7 +66,7 @@
   @include width-height(calc(100vw - 300px), 100vh);
 
   &__header {
-    height: 100px;
+    height: $usual_px;
     display: $flex;
     justify-content: space-between;
 
@@ -96,7 +96,7 @@
   &__message {
     height: calc(100vh - 190px);
     padding-left: 40px;
-    background-color: #fafafa;
+    background-color: $message_color ;
 
     &__user {
       display: $flex;
@@ -125,7 +125,7 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-    background-color: #ddd;
+    background-color: $form_color;
 
     &__input-box {
       position: relative;
@@ -150,10 +150,10 @@
 
     &__submit-btn {
       input {
-        @include width-height(100px,50px);
+        @include width-height($usual_px,50px);
         margin-left: 15px;
         padding: 0 30px;
-        background-color: #38aef0;
+        background-color: $submit_btn_color;
         color: white;
         cursor: pointer;
       }
