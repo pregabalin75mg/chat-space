@@ -1,14 +1,14 @@
 .chat-side
   .side-bar
     .side-bar__NameBox
-      .side-bar__NameBox__name
-        TestName
+      .side-bar__NameBox__name  
+        = current_user.name
       %ul.side-bar__NameBox__edit
         %li.side-bar__NameBox__edit-user
           = link_to root_path do
             = icon('far', 'edit')
         %li.side-bar__NameBox__edit-gear
-          = link_to edit_user_registration_path do
+          = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
         
   .side-group
