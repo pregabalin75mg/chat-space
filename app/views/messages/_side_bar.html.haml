@@ -5,14 +5,16 @@
         = current_user.name
       %ul.side-bar__NameBox__edit
         %li.side-bar__NameBox__edit-user
-          = link_to root_path do
+          = link_to new_group_path do
             = icon('far', 'edit')
         %li.side-bar__NameBox__edit-gear
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog')
         
   .side-group
-    .side-group__GroupName
-      Test Group Name
-    .side-group__GroupMessage
-      Test Group Message
+    - current_user.groups.each do |group|
+      = link_to '#' do
+        .side-group__GroupName
+          = group.name
+        .side-group__GroupMessage
+          メッセージなし
