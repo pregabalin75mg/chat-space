@@ -46,16 +46,23 @@
     color: $common_color;
     font-weight: bold;
 
-      &__GroupName {
-        font-size: 15px;
-        margin-left: $common_px;
-        padding-top: $common_px;
-      }
+    &__GroupName {
+      font-size: 15px;
+      margin-left: $common_px;
+      padding-top: $common_px;
+      text-align: none;
+    }
 
-      &__GroupMessage {
-        font-size: 11px;
-        margin: 5px $common_px 40px;
-      }
+    &__GroupMessage {
+      font-size: 11px;
+      margin: 5px $common_px 40px;
+      text-decoration: none;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $common_color;
+    }
   }
 }
 

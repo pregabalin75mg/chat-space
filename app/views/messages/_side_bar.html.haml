@@ -12,7 +12,9 @@
             = icon('fas', 'cog')
         
   .side-group
-    .side-group__GroupName
-      Test Group Name
-    .side-group__GroupMessage
-      Test Group Message
+    - current_user.groups.each do |group|
+      = link_to '#' do
+        .side-group__GroupName
+          = group.name
+        .side-group__GroupMessage
+          メッセージなし
