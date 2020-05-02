@@ -1,10 +1,15 @@
 .chat-main
   .chat-main__header
     .chat-main__header__GroupName
-      Test Group Name
-      .chat-main__header__GroupName__MemberName
-        Member: Test
-    = link_to 'edit', root_path, class: ".chat-main__header__edit-btn"
+      = @group.name
+      %ul.chat-main__header__GroupName__MemberName 
+        .chat-main__header__GroupName__MemberName__member member:
+        %li.chat-main__header__GroupName__MemberName__member 
+          - @group.users.each do |user|
+            = user.name
+         
+
+    = link_to 'edit', edit_group_path(@group), class: ".chat-main__header__edit-btn"
 
   .chat-main__message
     = render @messages
