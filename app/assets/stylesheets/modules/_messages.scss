@@ -134,6 +134,10 @@
     height: 90px;
     background-color: $form_color;
 
+    .new_message {
+      display: flex;
+    }
+
     &__input-box {
       position: relative;
 
@@ -156,14 +160,16 @@
     }
 
     &__submit-btn {
-      input {
         @include width-height($usual_px,50px);
         margin-left: 15px;
         padding: 0 30px;
         background-color: $submit_btn_color;
         color: white;
         cursor: pointer;
+      &__btn {
+        color: white;
       }
     }
   }
 }
+
