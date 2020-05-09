@@ -105,6 +105,7 @@
     height: calc(100vh - 190px);
     padding-left: 40px;
     background-color: $message_color ;
+    overflow: scroll;
 
     &__user {
       display: $flex;
