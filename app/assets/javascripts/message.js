@@ -53,6 +53,7 @@ $(function(){
       var html = buildHTML(data);
       $('.chat-main__message').append(html)
       $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
+      $('form')[0].reset();
     })
   });
 });
