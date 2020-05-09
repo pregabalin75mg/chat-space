@@ -52,7 +52,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.chat-main__message').append(html)
-      $('#message_content').val('')
+      $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
     })
   });
 });
