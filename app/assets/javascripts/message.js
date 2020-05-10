@@ -59,7 +59,7 @@ $(function(){
       alert("メッセージ送信に失敗しました");
     });
     .always(function() {
-      
+      $('.chat-main__form__submit-btn').prop('disabled', false);
     })
   });
 });
