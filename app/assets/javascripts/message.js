@@ -3,37 +3,43 @@ $(function(){
         if ( message.image ) {
           var html =
             `
-              <div class="chat-main__message__user">
-                <div class="chat-main__message__user__UserName">
-                  ${message.user_name}
+              <div class="chat-main__message__user" data-message-id=${message.id}>
+                <div class="chat-main__message__user__flex">
+                  <div class="chat-main__message__user__flex__UserName">
+                    ${message.user_name}
+                  </div>
+                  <div class="chat-main__message__user__flex__date">
+                    ${message.created_at}
+                  </div>
                 </div>
-                <div class="chat-main__message__user__date">
-                  ${message.created_at}
+                  <div class="chat-main__message__user__UserMessage">
+                  <p class="chat-main__message__user__UserMessage__content">
+                    ${message.content}
+                  </p>
+                  <img src=${message.image} >
                 </div>
-              </div>
-                <div class="chat-main__message__UserMessage">
-                <p class="chat-main__message__UserMessage__content">
-                  ${message.content}
-                </p>
-                <img src=${message.image} >
               </div>`
+              
         return html;
         } else {
           var html =
-            `
-              <div class="chat-main__message__user">
-                <div class="chat-main__message__user__UserName">
-                  ${message.user_name}
-                </div>
-                <div class="chat-main__message__user__date">
-                ${message.created_at}
-                </div>
+          `
+          <div class="chat-main__message__user" data-message-id=${message.id}>
+            <div class="chat-main__message__user__flex">
+              <div class="chat-main__message__user__flex__UserName">
+                ${message.user_name}
               </div>
-              <div class="chat-main__message__UserMessage">
-                <p class="chat-main__message__UserMessage__content">
-                  ${message.content}
-                </p>
-              </div>`
+              <div class="chat-main__message__user__flex__date">
+                ${message.created_at}
+              </div>
+            </div>
+              <div class="chat-main__message__user__UserMessage">
+              <p class="chat-main__message__user__UserMessage__content">
+                ${message.content}
+              </p>
+            </div>
+          </div>`
+
         return html;
           };
         }
@@ -62,4 +68,29 @@ $(function(){
       $('.chat-main__form__submit-btn').prop('disabled', false);
     })
   });
+  var reloadMessages = function() {
+    var last_message_id = $('.chat-main__message__user:last').data("message-id");
+    $.ajax({
+      url: "api/messages",
+      type: 'get',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      if (messages.length !== 0) {
+        var insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        $('.chat-main__message').append(insertHTML);
+        $('.chat-main__message').animate({ scrollTop: $('.chat-main__message')[0].scrollHeight});
+      }
+    })
+    .fail(function() {
+      alert('error');
+    });
+  };
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  }
 });
