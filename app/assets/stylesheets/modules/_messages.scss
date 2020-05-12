@@ -108,24 +108,26 @@
     overflow: scroll;
 
     &__user {
-      display: $flex;
       padding-top: 35px;
 
-      &__UserName {
-        font-size: $font_px;
-        color: #333333;
-      }
+      &__flex {
+        display: flex;
 
-      &__date {
-        font-size: $sometimes_px;
-        color: $grey;
-      }
-    }
+        &__UserName {
+          font-size: $font_px;
+          color: #333333;
+        }
 
-    &__UserMessage {
-      font-size: 14px;
-      color: #434A54;
-      margin: $sometimes_px 0 46px;
+        &__date {
+          font-size: $sometimes_px;
+          color: $grey;
+        }
+      }
+      &__UserMessage {
+        font-size: 14px;
+        color: #434A54;
+        margin: $sometimes_px 0 46px;
+      }
     }
   }
 
